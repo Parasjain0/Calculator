@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Css files -->
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+  <div class="container my-5">
+    <h1 class="text-center fw-bold mb-4">Javascript Calculator</h1>
+    <form class="row g-4" name="Form">
+      <!-- Input 1 that is number and here I have used onclick and oninput function -->
+      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+        <label for="inputNumber1" class=" form-label fw-bold" onclick="resetAnswer()">First Number</label>
+        <input type="number" class="form-control fw-bold border-black border-2" id="inputNumber1"
+          onclick="resetAnswer()" oninput="buttonStatus()">
+      </div>
+      <!-- Input 2 that is operator and here I have used oninput function -->
+      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+        <label for="inputOperator" class="form-label fw-bold" oninput="resetAnswer()">Operator</label>
+        <select oninput="resetAnswer()" class="form-select fw-bold border-black border-2" id="op-select">
+          <option selected value="1">+</option>
+          <option value="2">-</option>
+          <option value="3">*</option>
+          <option value="4">/</option>
+        </select>
+      </div>
+      <!-- Input 3 that is taking second number and I have used onclick and oninput function -->
+      <div class="col-md-4 col-lg-4 col-sm-12 mx-auto">
+        <label for="inputNumber2" class="form-label fw-bold" onclick="resetAnswer()">Second Number</label>
+        <input type="number" class="form-control fw-bold border-black border-2" id="inputNumber2"
+          onclick="resetAnswer()" oninput="buttonStatus()">
+      </div>
+      <!-- here it is submit button -->
+      <div class="col-lg-12 ">
+        <button type="button" class="form-control btn btn-primary border-black border-2" id="submitbutton"
+          onclick="calculate()" disabled>Submit</button>
+      </div>
+      <!-- Here it is the field for output -->
+      <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+        <label for="answer" class="form-label fw-bold">Answer</label>
+        <input type="text" class="form-control fw-bold border-black border-2" id="answer" disabled>
+      </div>
+    </form>
+  </div>
+  <!--JavaScript -->
+  <!-- We can use online link but here we are using compiled version-->
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="./JS/myjs.js"></script>
+</body>
+</html>

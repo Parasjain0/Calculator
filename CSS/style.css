@@ -1,0 +1,12 @@
+/* Importing google fornts from internet */
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Merriweather:wght@700&family=Poppins&display=swap');
+/* background */
+body {
+    background-image:
+        linear-gradient(to left, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url("../Images/background.png");
+    background-size: cover;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
+}
